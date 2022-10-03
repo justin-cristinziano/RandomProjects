@@ -50,6 +50,7 @@ public class ChemistryGradeTranslator {
                 default:
                     System.out.println("");
                     System.out.println("You messed up somewhere dawg");
+                    break;
             }
             System.out.println("");
             i++;
