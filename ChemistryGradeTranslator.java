@@ -13,12 +13,8 @@ public class ChemistryGradeTranslator {
     */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Copy and paste the list of numbers here (from the chem gradebook): ");
-        while(!in.hasNextInt()) {
-            System.out.println("You gots to input only the numbers gang");
-        }
-        int numbers = Math.abs(in.nextInt());
-        String numbersString = String.valueOf(numbers);
+        System.out.print("Copy and paste the list of numbers here (from the answer key): ");
+        String numbersString = in.nextLine();
         System.out.println("");
         NumberToLetter(numbersString);
     }
@@ -50,6 +46,7 @@ public class ChemistryGradeTranslator {
                 default:
                     System.out.println("");
                     System.out.println("You messed up somewhere dawg");
+                    break;
             }
             System.out.println("");
             i++;
